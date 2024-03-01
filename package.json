@@ -1,0 +1,13 @@
+{
+  "name": "@weborigami/photo-blog",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@weborigami/origami": "0.0.43"
+  },
+  "scripts": {
+    "build": "rm -r build; ori @copy src/site.ori/public, @files/build",
+    "docs": "ori '@svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
+    "start": "ori @serve @watch src, =@debug site.ori/public"
+  }
+}

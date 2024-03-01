@@ -1,0 +1,20 @@
+// The index page shows all the photos
+(photos) => `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="view-transition" content="same-origin" />
+    <title>Photo Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    ${ @map(photos, (photo, filename) => `
+    <li>
+      <img src="/photos/${filename}">
+      <p>${ package:@weborigami/exif(photo)/tags/ImageDescription }</p>
+    </li>
+    `) }
+  </body>
+</html>
+`

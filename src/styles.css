@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  background-image: url(asphalt.jpg);
+  color: #eee;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  display: grid;
+  justify-content: center;
+  gap: 8rem;
+  margin: 0;
+  padding: 8rem 0;
+}
+
+li {
+  /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); */
+  list-style: none;
+}
+
+img {
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
+  display: block;
+  max-width: 100%;
+  width: 600px;
+}
+
+p {
+  /* background: rgba(0, 0, 0, 0.5); */
+  /* font-weight: bold; */
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  text-shadow: 0 0 6px black;
+}

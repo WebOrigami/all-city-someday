@@ -6,8 +6,8 @@
     "@weborigami/origami": "0.0.43"
   },
   "scripts": {
-    "build": "rm -r build; ori @copy src/site.ori/public, @files/build",
+    "build": "rm -r build; ori @copy src/site.ori, @files/build",
     "docs": "ori '@svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
-    "start": "ori @serve @watch src, =@debug site.ori/public"
+    "start": "ori @serve @watch src, =@debug site.ori"
   }
 }

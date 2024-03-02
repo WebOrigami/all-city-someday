@@ -20,11 +20,18 @@ body {
   text-shadow: 0 0 6px black;
 }
 
+body > * {
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
 li {
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); */
   list-style: none;
-  max-width: 600px;
-  width: 100%;
 }
 
 img {
@@ -40,4 +47,8 @@ p {
   padding: 1rem 0;
   /* text-align: center; */
   /* text-wrap: balance; */
+}
+
+a {
+  color: inherit;
 }

@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="view-transition" content="same-origin" />
-    <title>all city</title>
+    <title>all city someday</title>
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <h1>all city</h1>
+    <h1>all city someday</h1>
     ${ @map(photos, (photo, filename) => `
     <li>
       <img src="/photos/${filename}">
@@ -20,6 +20,11 @@
       </p>
     </li>
     `) }
+    <p>
+      This photo blog is based on Google Drive: photos posted to a
+      specific Google Drive folder will end up appearing here.
+      <a href="https://github.com/WebOrigami/photo-blog">View source</a>
+    </p>
   </body>
 </html>
 `

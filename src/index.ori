@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="view-transition" content="same-origin" />
-    <title>Photo Blog</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>all city</title>
+    <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
+    <h1>all city</h1>
     ${ @map(photos, (photo, filename) => `
     <li>
       <img src="/photos/${filename}">

@@ -9,16 +9,14 @@
   // Or uncomment this to use just a few Google Drive entries.
   // entries = @take(driveFolder, 3)
 
-  public = {   
+  public = {
+    // Stylesheet, etc.
+    assets
+    
     // The home page shows all the photos.
     index.html = index.ori(photos)
 
     // Cache the photos so we can reload them quickly.
     photos = @cache(driveFolder, cache)
-
-    // Miscellaneous resources
-    asphalt.jpg
-    asphalt2.jpg
-    styles.css
   }
 }

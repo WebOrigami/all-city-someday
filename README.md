@@ -14,3 +14,4 @@ If you want to try this with your own Google Drive account:
 ## Credits
 
 [Asphalt texture](http://wildtextures.com/free-textures/dark-asphalt-seamless-texture/) by Tomasz Grabowiecki
+[Gochi Hand font](https://fonts.google.com/specimen/Gochi+Hand)

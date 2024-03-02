@@ -14,20 +14,22 @@ body {
 li {
   /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.9); */
   list-style: none;
+  max-width: 100%;
+  width: 600px;
 }
 
 img {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
   display: block;
-  max-width: 100%;
-  width: 600px;
+  width: 100%;
 }
 
 p {
   /* background: rgba(0, 0, 0, 0.5); */
   /* font-weight: bold; */
   margin: 0;
-  padding: 1rem;
-  text-align: center;
+  padding: 1rem 0;
+  /* text-align: center; */
   text-shadow: 0 0 6px black;
+  /* text-wrap: balance; */
 }

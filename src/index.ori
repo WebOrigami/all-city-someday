@@ -12,7 +12,11 @@
     ${ @map(photos, (photo, filename) => `
     <li>
       <img src="/photos/${filename}">
-      <p>${ package:@weborigami/exif(photo)/tags/ImageDescription }</p>
+      <p>
+        ${ package:@weborigami/exif(photo)/tags/ImageDescription }
+        —
+        ${ formatDate.js(package:@weborigami/exif(photo)/tags/ModifyDate) }
+      </p>
     </li>
     `) }
   </body>

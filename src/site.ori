@@ -6,5 +6,5 @@
   index.html = index.ori(photos)
 
   // Cache the photos from Google Drive for ease in development.
-  photos = @cache(photos.ori/, cache)
+  photos = @cache(photos.ori, cache)
 }

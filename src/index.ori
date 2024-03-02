@@ -6,13 +6,16 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="view-transition" content="same-origin" />
     <title>all city someday</title>
-    <link rel="stylesheet" href="assets/styles.css" />
+    <!-- We care more about loading the font than the loading the images. -->
+    <link rel="prefetch" href="/assets/GochiHand-Regular.ttf" />
+    <!-- Since this is just a one page site, we can inline the stylesheet. -->
+    <style>${ assets/styles.css }</style>
   </head>
   <body>
     <h1>all city someday</h1>
     ${ @map(photos, (photo, filename) => `
     <li>
-      <img src="/photos/${filename}">
+      <img loading="lazy" src="/photos/${filename}">
       <p>
         ${ package:@weborigami/exif(photo)/tags/ImageDescription }
         —
@@ -21,8 +24,8 @@
     </li>
     `) }
     <p>
-      This photo blog is based on Google Drive: photos posted to a
-      specific Google Drive folder will end up appearing here.
+      This photo blog is based on Google Drive: photos saved to a specific
+      folder there end up appearing here.
       <a href="https://github.com/WebOrigami/photo-blog">View source</a>
     </p>
   </body>

@@ -18,7 +18,8 @@
       <img loading="lazy" src="/photos/${filename}">
       <p>
         ${ package:@weborigami/exif(photo)/tags/ImageDescription }
-        —
+      </p>
+      <p class="date">
         ${ formatDate.js(package:@weborigami/exif(photo)/tags/ModifyDate) }
       </p>
     </li>

@@ -17,7 +17,7 @@ body {
   justify-content: center;
   gap: 8rem;
   margin: 0;
-  padding: 8rem 2vh;
+  padding: 8rem 4vw;
   text-shadow: 0 0 6px black;
 }
 
@@ -43,15 +43,19 @@ img {
   aspect-ratio: 1;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.9);
   display: block;
+  margin-bottom: 1rem;
   object-fit: cover;
   width: 100%;
 }
 
 p {
   margin: 0;
-  padding: 1rem 0;
 }
 
 a {
   color: inherit;
+}
+
+.date {
+  color: #bbb;
 }

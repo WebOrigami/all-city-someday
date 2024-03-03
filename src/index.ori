@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="view-transition" content="same-origin" />
     <title>all city someday</title>
-    <!-- We care more about loading the font than the loading the images. -->
+    <!-- We care more about loading the fonts than the loading the images. -->
+    <link rel="prefetch" href="/assets/amsterdam.ttf" />
     <link rel="prefetch" href="/assets/GochiHand-Regular.ttf" />
     <!-- Since this is just a one page site, we can inline the stylesheet. -->
     <style>${ assets/styles.css }</style>

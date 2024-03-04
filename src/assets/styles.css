@@ -15,7 +15,6 @@
 }
 
 body {
-  background-attachment: fixed;
   background-color: black;
   background-image: url(/assets/asphalt.jpg);
   color: #eee;

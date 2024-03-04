@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="view-transition" content="same-origin" />
-    <title>all city someday</title>
+    <title>All City Someday</title>
     <!-- We care more about loading the fonts than the loading the images. -->
     <link rel="prefetch" href="/assets/amsterdam.ttf" />
     <link rel="prefetch" href="/assets/GochiHand-Regular.ttf" />
@@ -13,7 +13,7 @@
     <style>${ assets/styles.css }</style>
   </head>
   <body>
-    <h1>all city someday</h1>
+    <h1>All City Someday</h1>
     ${ @map(photos, (photo, filename) => `
     <li>
       <img loading="lazy" src="/photos/${filename}">

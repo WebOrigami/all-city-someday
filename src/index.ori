@@ -18,18 +18,24 @@
     <li>
       <img loading="lazy" src="/photos/${filename}">
       <p>
-        ${ package:@weborigami/exif(photo)/tags/ImageDescription }
+        ${ photo/caption }
       </p>
       <p class="date">
-        ${ formatDate.js(package:@weborigami/exif(photo)/tags/ModifyDate) }
+        ${ formatDate.js(photo/modified) }
       </p>
     </li>
     `) }
-    <p>
-      This photo blog is based on Google Drive: photos saved to a specific
-      folder there end up appearing here.
-      <a href="https://github.com/WebOrigami/photo-blog">View source</a>
-    </p>
+    <footer>
+      <p>
+        This photo blog is based on Google Drive: photos saved to a specific
+        folder there end up appearing here.
+        <a href="https://github.com/WebOrigami/photo-blog">View source</a>
+        <br>
+        <br>
+        All street art photos ©<a href ="https://www.instagram.com/saimohaus">
+        Dan Saimo</a> and used for this sample site with his permission.
+      </p>
+    </footer>
   </body>
 </html>
 `

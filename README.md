@@ -16,5 +16,7 @@ If you want to try this with your own Google Drive account:
 All street art photos ©[Dan Saimo](https://www.instagram.com/saimohaus/) who graciously gave permission to use them here in this sample site.
 
 [Asphalt texture](http://wildtextures.com/free-textures/dark-asphalt-seamless-texture/) by Tomasz Grabowiecki
+
 [Souper3 font](https://www.dafont.com/souper3.font) by soup
-[Gochi Hand font](https://fonts.google.com/specimen/Gochi+Hand)by Huerta Tipográfica
+
+[Gochi Hand font](https://fonts.google.com/specimen/Gochi+Hand) by Huerta Tipográfica

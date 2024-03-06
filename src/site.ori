@@ -15,5 +15,9 @@
 
     // Include all the photos.
     photos
+
+    // JSON and RSS feeds
+    feed.json = feed.ori(photos)
+    rss.xml = @rss(feed.json)
   }
 }

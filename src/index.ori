@@ -21,7 +21,13 @@
         ${ photo/caption }
       </p>
       <p class="date">
-        ${ formatDate.js(photo/modified) }
+        ${
+          photo/modified/toLocaleString("en-US", {
+            month: "long"
+            day: "numeric"
+            year: "numeric"
+          })
+        }
       </p>
     </li>
     `) }

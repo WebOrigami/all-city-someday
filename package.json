@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "https://gitpkg.now.sh/WebOrigami/origami/origami?7ff33a84",
+    "@weborigami/origami": "https://gitpkg.now.sh/WebOrigami/origami/origami?d8c789e3",
     "@weborigami/gdrive": "https://gitpkg.now.sh/WebOrigami/extensions/gdrive?36b2654a",
     "dotenv": "16.4.5"
   },

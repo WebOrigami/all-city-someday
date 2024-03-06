@@ -1,3 +1,11 @@
-// This file defines the source of the photos. It could be a local folder,
-// but in this case it's a shared folder with a specific ID on Google Drive.
-package:@weborigami/gdrive/auth(creds.js/)/14ItmduevPs0MwFvCWHCiyHJicV5S-YTc
+// Get photos from Google Drive.
+
+// For credentials we'll use a local creds.json file if present (see README.md
+// for details). On production we'll read that from an environment variable.
+@or(creds.json, @node/process/env/CREDS_JSON)
+
+// Use those credentials to authenticate with Google Drive.
+→ (creds) => package:@weborigami/gdrive/auth(creds)
+
+// Get the shared Google Drive folder with a specific ID.
+→ (drive) => drive/14ItmduevPs0MwFvCWHCiyHJicV5S-YTc

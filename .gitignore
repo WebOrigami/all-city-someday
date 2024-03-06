@@ -1,4 +1,5 @@
 build
-creds.json
-node_modules
 cache
+creds.json
+.env
+node_modules

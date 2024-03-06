@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="view-transition" content="same-origin" />
     <title>All City Someday</title>
+    <!-- Feeds -->
+    <link rel="alternate" type="application/rss+xml" title="All City Someday" href="rss.xml" />
+    <link rel="alternate" type="application/json" title="All City Someday" href="feed.json" />    
     <!-- We care more about loading the fonts than the loading the images. -->
     <link rel="prefetch" href="/assets/amsterdam.ttf" />
     <link rel="prefetch" href="/assets/GochiHand-Regular.ttf" />
@@ -14,15 +17,17 @@
   </head>
   <body>
     <h1>All City Someday</h1>
+    <!-- For each photo, show the image with accompanying text. -->
     ${ @map(photos, (photo, filename) => `
     <li>
+      <a name="${filename}"></a>
       <img loading="lazy" src="/photos/${filename}">
       <p>
         ${ photo/caption }
       </p>
       <p class="date">
-        ${
-          photo/modified/toLocaleString("en-US", {
+        <!-- US-style date format: January 1, 2024 -->
+        ${ photo/modified/toLocaleString("en-US", {
             month: "long"
             day: "numeric"
             year: "numeric"

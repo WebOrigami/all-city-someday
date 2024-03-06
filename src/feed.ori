@@ -1,15 +1,10 @@
-// Top-level feed data in JSON Feed format
-// See https://www.jsonfeed.org/version/1.1/
+// The data for the photo feed in JSON Feed format.
+// This data will also be used to generate the corresponding RSS.
 (photos) => {
-  version = "https://jsonfeed.org/version/1.1"
-  title = "All City Someday"
-  description = "Street art photo blog"
-  feed_url = "https://all-city-someday.netlify.app/feed.json"
-  home_page_url = "https://all-city-someday-netlify-app"
-  items = @values(@map(photos, (photo, filename) => {
-    date_published: photo/modified
-    title: photo/caption
-    content_html:
-      `<img src="https://all-city-someday.netlify.app/photos/${filename}" alt="${photo/caption}">`
-  }))
+  version: "https://jsonfeed.org/version/1.1"
+  title: "All City Someday"
+  description: "Street art photo blog"
+  feed_url: "https://all-city-someday.netlify.app/feed.json"
+  home_page_url: "https://all-city-someday.netlify-app"
+  items: @values(@map(photos, feedItem.ori))
 }

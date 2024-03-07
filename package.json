@@ -4,7 +4,7 @@
   "type": "module",
   "dependencies": {
     "@weborigami/origami": "https://gitpkg.now.sh/WebOrigami/origami/origami?5c49b59e",
-    "@weborigami/gdrive": "https://gitpkg.now.sh/WebOrigami/extensions/gdrive?a71f5c49",
+    "@weborigami/gdrive": "https://gitpkg.now.sh/WebOrigami/extensions/gdrive?8134ac85",
     "dotenv": "16.4.5"
   },
   "scripts": {

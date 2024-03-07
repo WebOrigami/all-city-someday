@@ -1,11 +1,10 @@
-// Get photos from Google Drive.
+// This Origami program returns a set of photos from Google Drive.
 
-// For credentials we'll use a local creds.json file if present (see README.md
-// for details). On production we'll read that from an environment variable.
-@or(creds.json, @parse/json(@node/process/env/CREDS_JSON))
+// Parse Google credentials from the .env file.
+@parse/json(dotenv.js()/CREDS_JSON)
 
 // Use those credentials to authenticate with Google Drive.
 → (creds) => package:@weborigami/gdrive/auth(creds)
 
-// Get the shared Google Drive folder with a specific ID.
+// Return the shared Google Drive folder with a specific ID.
 → (drive) => drive/14ItmduevPs0MwFvCWHCiyHJicV5S-YTc

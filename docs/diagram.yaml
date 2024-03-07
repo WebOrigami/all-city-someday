@@ -1,0 +1,10 @@
+# This is used to create a diagram of the site's structure for the ReadMe.
+
+assets: Stylesheet, etc.
+index.html: Home page showing all photos
+photos:
+  image1.jpg: Image 1
+  image2.jpg: Image 2
+  image3.jpg: Image 3
+feed.json: JSON feed of all photos
+rss.xml: RSS feed of all photos

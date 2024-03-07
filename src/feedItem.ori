@@ -3,6 +3,7 @@
 (photo, filename) => {
   content_html: `<img src="https://all-city-someday.netlify.app/photos/${ photo/modified/toISOString() }" alt="${photo/caption}">`
   date_published: photo/modified
+  id: `https://all-city-someday.netlify.app/#${ photo/modified/toISOString() }`
   title: photo/caption
-  url: `https://all-city-someday.netlify.app/#${filename}`
+  url: `https://all-city-someday.netlify.app/#${ photo/modified/toISOString() }`
 }

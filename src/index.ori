@@ -43,6 +43,10 @@
         <a href="https://github.com/WebOrigami/photo-blog">View source</a>
       </p>
       <p>
+        This blog also supports
+        <a href="rss.xml">RSS</a> and <a href="feed.json">JSON</a> feeds.
+      </p>
+      <p>
         All street art photos ©<a href ="https://www.instagram.com/saimohaus">
         Dan Saimo</a> and used here with his permission.
       </p>

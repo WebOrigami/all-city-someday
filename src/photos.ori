@@ -2,7 +2,7 @@
 
 // For credentials we'll use a local creds.json file if present (see README.md
 // for details). On production we'll read that from an environment variable.
-@or(creds.json, @node/process/env/CREDS_JSON)
+@or(creds.json, @parse/json(@node/process/env/CREDS_JSON))
 
 // Use those credentials to authenticate with Google Drive.
 → (creds) => package:@weborigami/gdrive/auth(creds)

@@ -18,15 +18,15 @@
   <body>
     <h1>All City Someday</h1>
     <!-- For each photo, show the image with accompanying text. -->
+    <!-- Include an anchor tag so that the feed can link to a photo. -->
     ${ @map(photos, (photo, filename) => `
     <li>
-      <a name="${filename}"></a>
+      <a name="${ photo/modified/toISOString() }"></a>
       <img loading="lazy" src="/photos/${filename}">
       <p>
         ${ photo/caption }
       </p>
       <p class="date">
-        <!-- US-style date format: January 1, 2024 -->
         ${ photo/modified/toLocaleString("en-US", {
             month: "long"
             day: "numeric"
@@ -41,8 +41,8 @@
         This sample photo blog is based on Google Drive: photos saved to a
         specific folder there end up appearing here.
         <a href="https://github.com/WebOrigami/photo-blog">View source</a>
-        <br>
-        <br>
+      </p>
+      <p>
         All street art photos ©<a href ="https://www.instagram.com/saimohaus">
         Dan Saimo</a> and used here with his permission.
       </p>

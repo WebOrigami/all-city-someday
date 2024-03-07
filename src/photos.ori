@@ -1,10 +1,21 @@
-// This Origami program returns a set of photos from Google Drive.
+// This returns a feed of photos from Google Drive. This is a pipeline of
+// function calls: each function takes the output of the previous one. The final
+// result is a reverse chronological feed of photos.
 
-// Parse Google credentials from the .env file.
+// Parse Google credentials from an environment variable.
 @parse/json(dotenv.js()/CREDS_JSON)
 
 // Use those credentials to authenticate with Google Drive.
 → (creds) => package:@weborigami/gdrive/auth(creds)
 
-// Return the shared Google Drive folder with a specific ID.
+// Get the shared Google Drive folder with a specific ID.
 → (drive) => drive/14ItmduevPs0MwFvCWHCiyHJicV5S-YTc
+
+// Cache the photos in that folder for ease in development,
+→ (photos) => @cache(photos, @files/cache)
+
+// Sort photos by date.
+→ (cached) => @sortBy(cached, (photo) => photo/modified)
+
+// Reverse to get the most recent photos first.
+→ @reverse

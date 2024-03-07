@@ -1,5 +1,4 @@
-// The data for a single photo in a JSON Feed.
-// This data will also be used to generate the corresponding RSS.
+// The data for a single photo as an object in JSON Feed format.
 (photo, filename) => {
   content_html: `<img src="https://all-city-someday.netlify.app/photos/${ photo/modified/toISOString() }" alt="${photo/caption}">`
   date_published: photo/modified

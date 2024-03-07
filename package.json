@@ -8,8 +8,8 @@
     "dotenv": "16.4.5"
   },
   "scripts": {
-    "build": "rm -rf build; ori @copy src/site.ori/public, @files/build",
+    "build": "rm -rf build; ori @copy src/site.ori, @files/build",
     "docs": "ori '@svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
-    "start": "ori @serve @watch src, =@debug site.ori/public"
+    "start": "ori @serve @watch src, =@debug site.ori"
   }
 }

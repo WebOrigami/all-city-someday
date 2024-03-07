@@ -1,5 +1,5 @@
-// The data for the photo feed in JSON Feed format.
-// This data will also be used to generate the corresponding RSS.
+// The data for the photo feed as an object in JSON Feed format. The same data
+// is also used to generate the corresponding RSS.
 (photos) => {
   version: "https://jsonfeed.org/version/1.1"
   title: "All City Someday"

@@ -1,4 +1,4 @@
-// The index page shows all the photos
+// The index page shows all the photos.
 (photos) => `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,7 +27,8 @@
         ${ photo/caption }
       </p>
       <p class="date">
-        ${ photo/modified/toLocaleString("en-US", {
+        ${ // Format the photo date in US style, e.g.: January 1, 2024
+          photo/modified/toLocaleString("en-US", {
             month: "long"
             day: "numeric"
             year: "numeric"

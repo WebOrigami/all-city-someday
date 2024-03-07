@@ -1,23 +1,15 @@
 // This file defines the overall structure of the site.
 {
-  // Cache the photos from Google Drive for ease in development,
-  cached = @cache(photos.ori, cache)
+  // Stylesheet, etc.
+  assets
+  
+  // The home page shows all the photos.
+  index.html = index.ori(photos)
 
-  // Sort photos in reverse chronological order.
-  photos = @sortBy(cached, (photo) => photo/modified) → @reverse
+  // Include all the photo files.
+  photos = photos.ori/
 
-  public = {
-    // Stylesheet, etc.
-    assets
-    
-    // The home page shows all the photos.
-    index.html = index.ori(photos)
-
-    // Include all the photos.
-    photos
-
-    // JSON and RSS feeds
-    feed.json = @json(feed.ori(photos))
-    rss.xml = @rss(feed.ori(photos))
-  }
+  // JSON and RSS feeds
+  feed.json = @json(feed.ori(photos))
+  rss.xml = @rss(feed.ori(photos))
 }

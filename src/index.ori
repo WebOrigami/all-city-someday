@@ -39,7 +39,7 @@
     `) }
     <footer>
       <p>
-        This sample photo blog is based on Google Drive: photos saved to a
+        This sample photo blog is backed by Google Drive: photos saved to a
         specific folder there end up appearing here.
         <a href="https://github.com/WebOrigami/photo-blog">View source</a>
       </p>

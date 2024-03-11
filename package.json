@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.0.44",
-    "@weborigami/gdrive": "https://gitpkg.now.sh/WebOrigami/extensions/gdrive?970f088d",
+    "@weborigami/origami": "0.0.45",
+    "@weborigami/gdrive": "0.0.1",
     "dotenv": "16.4.5"
   },
   "scripts": {

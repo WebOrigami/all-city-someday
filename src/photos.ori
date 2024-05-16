@@ -3,11 +3,11 @@
 
 folder.ori
 
-// Cache the photos in that folder for ease in development,
+// // Cache the photos in that folder for ease in development,
 → (photos) => @cache(photos, @files/cache)
 
 // Sort photos by date.
-→ (cached) => @sortBy(cached, (photo) => photo/modified)
+→ @sortFn((photo) => photo/modified)
 
 // Reverse to get the most recent photos first.
 → @reverse

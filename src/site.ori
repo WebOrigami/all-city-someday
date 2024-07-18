@@ -11,5 +11,5 @@
 
   // JSON and RSS feeds
   feed.json = @json(feed.ori(photos))
-  rss.xml = @rss(feed.ori(photos))
+  feed.xml = @rss(feed.ori(photos))
 }

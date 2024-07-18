@@ -7,4 +7,4 @@ photos:
   image2.jpg: Image 2
   image3.jpg: Image 3
 feed.json: JSON feed of all photos
-rss.xml: RSS feed of all photos
+feed.xml: RSS feed of all photos

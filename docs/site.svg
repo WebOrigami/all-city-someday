@@ -78,21 +78,21 @@
 <polygon fill="#999999" stroke="#999999" points="182.25,-144.06 176.21,-149.64 178.7,-145.25 175.14,-146.44 175.14,-146.44 175.14,-146.44 178.7,-145.25 174.07,-143.24 182.25,-144.06 182.25,-144.06"/>
 <text text-anchor="middle" x="87.79" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00">feed.json</text>
 </g>
-<!-- rss.xml -->
+<!-- feed.xml -->
 <g id="node9" class="node">
-<title>rss.xml</title>
-<g id="a_node9"><a xlink:href="rss.xml" xlink:title="RSS feed of all photos\l">
+<title>feed.xml</title>
+<g id="a_node9"><a xlink:href="feed.xml" xlink:title="RSS feed of all photos\l">
 <polygon fill="white" stroke="#b3b3b3" points="298.46,-36 183.44,-36 183.44,0 298.46,0 298.46,-36"/>
 <text text-anchor="start" x="191.2" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">RSS feed of all photos</text>
 </a>
 </g>
 </g>
-<!-- &#45;&gt;rss.xml -->
+<!-- &#45;&gt;feed.xml -->
 <g id="edge8" class="edge">
-<title>&#45;&gt;rss.xml</title>
+<title>&#45;&gt;feed.xml</title>
 <path fill="none" stroke="#999999" d="M8.98,-217.57C16.32,-204.7 39.08,-166.59 65,-141 106.79,-99.74 163.72,-62.52 201.13,-40.09"/>
 <polygon fill="#999999" stroke="#999999" points="207.88,-36.07 203.16,-42.81 204.66,-37.99 201.43,-39.91 201.43,-39.91 201.43,-39.91 204.66,-37.99 199.71,-37.01 207.88,-36.07 207.88,-36.07"/>
-<text text-anchor="middle" x="87.79" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00">rss.xml</text>
+<text text-anchor="middle" x="87.79" y="-144" font-family="Helvetica,sans-Serif" font-size="10.00">feed.xml</text>
 </g>
 <!-- photos/image1.jpg -->
 <g id="node5" class="node">

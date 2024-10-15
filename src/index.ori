@@ -1,41 +1,44 @@
 // The index page shows all the photos.
-(photos) => `<!DOCTYPE html>
+(photos) => @indent`
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="view-transition" content="same-origin" />
+    <meta name="view-transition" content="same-origin">
     <title>All City Someday</title>
     <!-- Feeds -->
-    <link rel="alternate" type="application/rss+xml" title="All City Someday" href="rss.xml" />
-    <link rel="alternate" type="application/json" title="All City Someday" href="feed.json" />    
+    <link rel="alternate" type="application/rss+xml" title="All City Someday" href="rss.xml">
+    <link rel="alternate" type="application/json" title="All City Someday" href="feed.json">    
     <!-- We care more about loading the fonts than the loading the images. -->
-    <link rel="prefetch" href="/assets/amsterdam.ttf" />
-    <link rel="prefetch" href="/assets/GochiHand-Regular.ttf" />
+    <link rel="prefetch" href="/assets/amsterdam.ttf">
+    <link rel="prefetch" href="/assets/GochiHand-Regular.ttf">
     <!-- Since this is just a one page site, we can inline the stylesheet. -->
-    <style>${ assets/styles.css }</style>
+    <style>
+      ${ assets/styles.css }
+    </style>
   </head>
   <body>
     <h1>All City Someday</h1>
     <!-- For each photo, show the image with accompanying text. -->
     <!-- Include an anchor tag so that the feed can link to a photo. -->
-    ${ @map(photos, (photo, filename) => `
-    <li>
-      <a name="${ photo/modified/toISOString() }"></a>
-      <img loading="lazy" src="/photos/${filename}">
-      <p>
-        ${ photo/caption }
-      </p>
-      <p class="date">
-        ${ // Format the photo date in US style, e.g.: January 1, 2024
-          photo/modified/toLocaleString("en-US", {
-            month: "long"
-            day: "numeric"
-            year: "numeric"
-          })
-        }
-      </p>
-    </li>
+    ${ @map(photos, (photo, filename) => @indent`
+      <li>
+        <a name="${ photo/modified/toISOString() }"></a>
+        <img loading="lazy" src="/photos/${filename}">
+        <p>
+          ${ photo/caption }
+        </p>
+        <p class="date">
+          ${ // Format the photo date in US style, e.g.: January 1, 2024
+            photo/modified/toLocaleString("en-US", {
+              month: "long"
+              day: "numeric"
+              year: "numeric"
+            })
+          }
+        </p>
+      </li>
     `) }
     <footer>
       <p>

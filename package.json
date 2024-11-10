@@ -8,8 +8,8 @@
     "dotenv": "16.4.5"
   },
   "scripts": {
-    "build": "ori @copy src/site.ori, @clean @files/build",
-    "docs": "ori '@svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
-    "start": "ori @serve @watch src, =@debug site.ori"
+    "build": "ori copy src/site.ori, clear files:build",
+    "docs": "ori 'svg docs/diagram.yaml, { createLinks: false }' > docs/site.svg",
+    "start": "ori serve watch src, =debug site.ori"
   }
 }

@@ -4,10 +4,10 @@
 folder.ori
 
 // // Cache the photos in that folder for ease in development,
-→ (photos) => @cache(photos, @files/cache)
+→ (photos) => cache(photos, files:cache)
 
 // Sort photos by date.
-→ @sortFn((photo) => photo/modified)
+→ =sort(_, (photo) => photo/modified)
 
 // Reverse to get the most recent photos first.
-→ @reverse
+→ reverse

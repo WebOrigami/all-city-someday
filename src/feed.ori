@@ -7,7 +7,7 @@
   feed_url: "https://all-city-someday.netlify.app/feed.json"
   home_page_url: "https://all-city-someday.netlify-app"
   
-  items: @values(@map(photos, (photo, filename) => {
+  items: values(map(photos, (photo, filename) => {
     content_html: `<img src="https://all-city-someday.netlify.app/photos/${ photo/modified/toISOString() }" alt="${photo/caption}">`
     date_published: photo/modified
     id: `https://all-city-someday.netlify.app/#${ photo/modified/toISOString() }`

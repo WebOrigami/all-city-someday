@@ -10,6 +10,6 @@
   photos = photos.ori/
 
   // JSON and RSS feeds
-  feed.json = @json(feed.ori(photos))
-  feed.xml = @rss(feed.ori(photos))
+  feed.json = json(feed.ori(photos))
+  feed.xml = rss(feed.ori(photos))
 }

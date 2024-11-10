@@ -1,5 +1,5 @@
 // The index page shows all the photos.
-(photos) => @indent`
+(photos) => indent`
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,7 +22,7 @@
     <h1>All City Someday</h1>
     <!-- For each photo, show the image with accompanying text. -->
     <!-- Include an anchor tag so that the feed can link to a photo. -->
-    ${ @map(photos, (photo, filename) => @indent`
+    ${ map(photos, (photo, filename) => indent`
       <li>
         <a name="${ photo/modified/toISOString() }"></a>
         <img loading="lazy" src="/photos/${filename}">

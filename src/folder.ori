@@ -1,7 +1,7 @@
 // This file returns the Google Drive folder that contains the photos.
 
 // Parse Google credentials from an environment variable.
-@jsonParse(dotenv.js()/CREDS_JSON)
+jsonParse(dotenv.js()/CREDS_JSON)
 
 // Use those credentials to authenticate with Google Drive.
 → (creds) => package:@weborigami/gdrive/auth(creds)

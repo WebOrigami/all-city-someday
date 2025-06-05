@@ -1,0 +1,13 @@
+// This file returns the Google Drive folder that contains the photos.
+
+// Get Google credentials from an environment variable.
+<dotenv.js>().CREDS_JSON
+
+// Parse credentials.
+→ Origami.jsonParse
+
+// Use those credentials to authenticate with Google Drive.
+→ <package:@weborigami/gdrive/auth>
+
+// Get the shared Google Drive folder with a specific ID.
+→ (drive) => drive["14ItmduevPs0MwFvCWHCiyHJicV5S-YTc"]

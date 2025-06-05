@@ -1,13 +1,13 @@
 // This turns the folder of photos on Google Drive into a reverse
 // chronological feed of photos.
 
-folder.ori
+<folder.jse/>
 
 // // Cache the photos in that folder for ease in development,
-→ (photos) => cache(photos, files:cache)
+→ (photos) => Tree.cache(photos, <cache>)
 
 // Sort photos by date.
-→ =sort(_, (photo) => photo/modified)
+→ (cached) => Tree.sort(cached, (photo) => photo.modified)
 
 // Reverse to get the most recent photos first.
-→ reverse
+→ Tree.reverse

@@ -1,5 +1,5 @@
 // The index page shows all the photos.
-(photos) => indent`
+(photos) => Tree.indent`
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,23 +15,23 @@
     <link rel="prefetch" href="/assets/GochiHand-Regular.ttf">
     <!-- Since this is just a one page site, we can inline the stylesheet. -->
     <style>
-      ${ assets/styles.css }
+      ${ <assets/styles.css> }
     </style>
   </head>
   <body>
     <h1>All City Someday</h1>
     <!-- For each photo, show the image with accompanying text. -->
     <!-- Include an anchor tag so that the feed can link to a photo. -->
-    ${ map(photos, (photo, filename) => indent`
+    ${ Tree.map(photos, (photo, filename) => Tree.indent`
       <li>
-        <a name="${ photo/modified/toISOString() }"></a>
+        <a name="${ photo.modified.toISOString() }"></a>
         <img loading="lazy" src="/photos/${filename}">
         <p>
-          ${ photo/caption }
+          ${ photo.caption }
         </p>
         <p class="date">
           ${ // Format the photo date in US style, e.g.: January 1, 2024
-            photo/modified/toLocaleString("en-US", {
+            photo.modified.toLocaleString("en-US", {
               month: "long"
               day: "numeric"
               year: "numeric"

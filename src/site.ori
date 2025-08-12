@@ -4,12 +4,12 @@
   <assets>
   
   // The home page shows all the photos.
-  index.html = <index.jse>(photos)
+  index.html = index.ori(photos)
 
   // Include all the photo files.
-  photos/ = <photos.jse/>
+  photos/ = photos.ori/
 
   // JSON and RSS feeds
-  feed.json = Tree.json(<feed.jse>(photos))
-  feed.xml = Origami.rss(<feed.jse>(photos))
+  feed.json = Tree.json(feed.ori(photos))
+  feed.xml = Origami.rss(feed.ori(photos))
 }

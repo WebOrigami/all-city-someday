@@ -1,7 +1,7 @@
 // This file returns the Google Drive folder that contains the photos.
 
 // Get Google credentials from an environment variable.
-<dotenv.js>().CREDS_JSON
+dotenv.js().CREDS_JSON
 
 // Parse credentials.
 → Origami.jsonParse

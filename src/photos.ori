@@ -1,7 +1,7 @@
 // This turns the folder of photos on Google Drive into a reverse
 // chronological feed of photos.
 
-<folder.jse/>
+folder.ori/
 
 // // Cache the photos in that folder for ease in development,
 → (photos) => Tree.cache(photos, <cache>)

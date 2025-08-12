@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.1.0",
-    "@weborigami/gdrive": "0.0.5",
+    "@weborigami/origami": "0.4.1",
+    "@weborigami/gdrive": "0.0.12",
     "dotenv": "16.4.5"
   },
   "scripts": {

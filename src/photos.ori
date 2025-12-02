@@ -4,7 +4,7 @@
 folder.ori/
 
 // // Cache the photos in that folder for ease in development,
-→ (photos) => Tree.cache(photos, <cache>)
+→ (photos) => Tree.cache(photos, files:cache)
 
 // Sort photos by date.
 → (cached) => Tree.sort(cached, (photo) => photo.modified)

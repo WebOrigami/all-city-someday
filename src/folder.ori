@@ -7,7 +7,7 @@ dotenv.js().CREDS_JSON
 → Origami.jsonParse
 
 // Use those credentials to authenticate with Google Drive.
-→ <package:@weborigami/gdrive/auth>
+→ package:@weborigami/gdrive/auth
 
 // Get the shared Google Drive folder with a specific ID.
 → (drive) => drive["14ItmduevPs0MwFvCWHCiyHJicV5S-YTc"]

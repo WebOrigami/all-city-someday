@@ -1,7 +1,7 @@
 // This file defines the overall structure of the site.
 {
   // Stylesheet, etc.
-  <assets>
+  assets/
   
   // The home page shows all the photos.
   index.html = index.ori(photos)

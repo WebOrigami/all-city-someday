@@ -3,9 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.6.1",
+    "@weborigami/origami": "0.6.6",
     "@weborigami/gdrive": "0.0.16",
-    "dotenv": "16.4.5"
+    "dotenv": "17.2.3"
   },
   "scripts": {
     "build": "ori copy src/site.ori, clear files:build",
